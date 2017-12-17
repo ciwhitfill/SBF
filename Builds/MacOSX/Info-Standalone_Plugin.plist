@@ -8,7 +8,7 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.SBF</string>
+    <string>com.ciwhitfill.SBF</string>
     <key>CFBundleName</key>
     <string>SBF</string>
     <key>CFBundleDisplayName</key>

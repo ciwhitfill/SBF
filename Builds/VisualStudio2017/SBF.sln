@@ -1,11 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2017
 
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SBF - Standalone Plugin", "SBF_StandalonePlugin.vcxproj", "{72102800-B96A-6450-6159-C08C4D4EED96}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E160E96F-47FB-1D7B-43FD-BDC47722A36C} = {E160E96F-47FB-1D7B-43FD-BDC47722A36C}
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SBF - VST", "SBF_VST.vcxproj", "{8C4E8544-580A-C92A-1FB4-C5AC60F89B2A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E160E96F-47FB-1D7B-43FD-BDC47722A36C} = {E160E96F-47FB-1D7B-43FD-BDC47722A36C}
@@ -32,10 +27,6 @@ Global
 		{5C83400B-B29A-CD3A-377F-F41818B1C995}.Debug|x64.Build.0 = Debug|x64
 		{5C83400B-B29A-CD3A-377F-F41818B1C995}.Release|x64.ActiveCfg = Release|x64
 		{5C83400B-B29A-CD3A-377F-F41818B1C995}.Release|x64.Build.0 = Release|x64
-		{72102800-B96A-6450-6159-C08C4D4EED96}.Debug|x64.ActiveCfg = Debug|x64
-		{72102800-B96A-6450-6159-C08C4D4EED96}.Debug|x64.Build.0 = Debug|x64
-		{72102800-B96A-6450-6159-C08C4D4EED96}.Release|x64.ActiveCfg = Release|x64
-		{72102800-B96A-6450-6159-C08C4D4EED96}.Release|x64.Build.0 = Release|x64
 		{E160E96F-47FB-1D7B-43FD-BDC47722A36C}.Debug|x64.ActiveCfg = Debug|x64
 		{E160E96F-47FB-1D7B-43FD-BDC47722A36C}.Debug|x64.Build.0 = Debug|x64
 		{E160E96F-47FB-1D7B-43FD-BDC47722A36C}.Release|x64.ActiveCfg = Release|x64

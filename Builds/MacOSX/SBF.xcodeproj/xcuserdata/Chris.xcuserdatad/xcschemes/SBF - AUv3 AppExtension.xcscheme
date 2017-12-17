@@ -21,20 +21,6 @@
                ReferencedContainer = "container:SBF.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "90CCF4CFD68B341CD049FAE8"
-               BuildableName = "SBF.app"
-               BlueprintName = "SBF - Standalone Plugin"
-               ReferencedContainer = "container:SBF.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -44,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7698D2721AFF478034C230FE"
-            BuildableName = "SBF.appex"
-            BlueprintName = "SBF - AUv3 AppExtension"
-            ReferencedContainer = "container:SBF.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -67,16 +44,15 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "90CCF4CFD68B341CD049FAE8"
-            BuildableName = "SBF.app"
-            BlueprintName = "SBF - Standalone Plugin"
+            BlueprintIdentifier = "7698D2721AFF478034C230FE"
+            BuildableName = "SBF.appex"
+            BlueprintName = "SBF - AUv3 AppExtension"
             ReferencedContainer = "container:SBF.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -87,16 +63,15 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "90CCF4CFD68B341CD049FAE8"
-            BuildableName = "SBF.app"
-            BlueprintName = "SBF - Standalone Plugin"
+            BlueprintIdentifier = "7698D2721AFF478034C230FE"
+            BuildableName = "SBF.appex"
+            BlueprintName = "SBF - AUv3 AppExtension"
             ReferencedContainer = "container:SBF.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

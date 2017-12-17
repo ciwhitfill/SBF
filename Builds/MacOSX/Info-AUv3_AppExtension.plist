@@ -8,7 +8,7 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.SBF.SBFAUv3</string>
+    <string>com.ciwhitfill.SBF.SBFAUv3</string>
     <key>CFBundleName</key>
     <string>SBF</string>
     <key>CFBundleDisplayName</key>
@@ -37,13 +37,13 @@
         <array>
           <dict>
             <key>name</key>
-            <string>yourcompany: SBF</string>
+            <string>ciwhitfill: SBF</string>
             <key>description</key>
-            <string>SBF</string>
+            <string>M/S high pass</string>
             <key>factoryFunction</key>
             <string>SBFAUFactoryAUv3</string>
             <key>manufacturer</key>
-            <string>Manu</string>
+            <string>X000</string>
             <key>type</key>
             <string>aufx</string>
             <key>subtype</key>

@@ -22,11 +22,6 @@
 		<key>SBF - Shared Code.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>SBF - Standalone Plugin.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
 		<key>SBF - VST.xcscheme</key>
@@ -53,11 +48,6 @@
 			<true/>
 		</dict>
 		<key>8808C055F8B0F1296B63B239</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>90CCF4CFD68B341CD049FAE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
