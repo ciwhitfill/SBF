@@ -22,14 +22,14 @@
     <key>CFBundleVersion</key>
     <string>1.0.0</string>
     <key>NSHumanReadableCopyright</key>
-    <string></string>
+    <string>Chris Whitfill</string>
     <key>NSHighResolutionCapable</key>
     <true/>
     <key>AudioComponents</key>
     <array>
       <dict>
         <key>name</key>
-        <string>ciwhitfill: SBF</string>
+        <string>Chris Whitfill: SBF</string>
         <key>description</key>
         <string>M/S high pass</string>
         <key>factoryFunction</key>
