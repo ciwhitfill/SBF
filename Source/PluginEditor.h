@@ -37,6 +37,22 @@ public:
             *processor.freq = (float) slider->getValue();
         }
     }
+    
+    void sliderDragStarted (Slider* slider) override
+    {
+        if (slider == &filterFreq)
+        {
+            processor.freq->beginChangeGesture();
+        }
+    }
+    
+    void sliderDragEnded (Slider* slider) override
+    {
+        if (slider == &filterFreq)
+        {
+            processor.freq->endChangeGesture();
+        }
+    }
     private:
     void timerCallback() override
     {

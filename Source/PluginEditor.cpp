@@ -43,6 +43,8 @@ SbfAudioProcessorEditor::SbfAudioProcessorEditor (SbfAudioProcessor& p)
     freqLabel.setFont(customLookAndFeel.freqFont().withHeight(112));
     freqLabel.setJustificationType(juce::Justification::horizontallyCentred);
     addAndMakeVisible(&freqLabel);
+    
+    startTimer(30);
 }
 
 SbfAudioProcessorEditor::~SbfAudioProcessorEditor()
