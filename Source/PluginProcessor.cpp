@@ -25,6 +25,21 @@ SbfAudioProcessor::SbfAudioProcessor()
                        )
 #endif
 {
+    addParameter(freq = new AudioParameterFloat ("freq", // parameterID
+                                                 "Filter Frequency", // parameter name
+                                                 10.0f,   // mininum value
+                                                 360.0f,   // maximum value
+                                                 45.0f)); // default value
+    
+    addParameter(slope = new AudioParameterBool ("bool",
+                                                 "Filter Slope",
+                                                 false));
+    
+    addParameter(width = new AudioParameterFloat ("width",
+                                                  "Width",
+                                                  -6.0f,
+                                                  6.0f,
+                                                  0.0f));
 }
 
 SbfAudioProcessor::~SbfAudioProcessor()

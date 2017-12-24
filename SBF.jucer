@@ -2,14 +2,14 @@
 
 <JUCERPROJECT id="Hdk0VY" name="SBF" displaySplashScreen="0" reportAppUsage="0"
               splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
-              bundleIdentifier="com.ciwhitfill.SBF" includeBinaryInAppConfig="1"
+              bundleIdentifier="com.ChrisWhitfill.SBF" includeBinaryInAppConfig="1"
               cppLanguageStandard="11" companyCopyright="Chris Whitfill" buildVST="1"
               buildVST3="0" buildAU="1" buildAUv3="0" buildRTAS="0" buildAAX="0"
               buildStandalone="1" enableIAA="0" pluginName="SBF" pluginDesc="M/S high pass"
               pluginManufacturer="Chris Whitfill" pluginManufacturerCode="X000"
               pluginCode="Hdk0" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
               pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
-              pluginAUExportPrefix="SBFAU" pluginRTASCategory="" aaxIdentifier="com.ciwhitfill.SBF"
+              pluginAUExportPrefix="SBFAU" pluginRTASCategory="" aaxIdentifier="com.ChrisWhitfill.SBF"
               pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.2.0"
               companyName="Chris Whitfill">
   <MAINGROUP id="dzKyQ1" name="SBF">

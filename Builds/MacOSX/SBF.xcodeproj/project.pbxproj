@@ -259,7 +259,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				OTHER_LDFLAGS = "-bundle -lSBF";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = vst; }; name = Debug; };
@@ -298,7 +298,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				OTHER_LDFLAGS = "-bundle -lSBF";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = vst; }; name = Release; };
@@ -336,7 +336,7 @@
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				OTHER_LDFLAGS = "-bundle -lSBF";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = component; }; name = Debug; };
@@ -376,7 +376,7 @@
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				OTHER_LDFLAGS = "-bundle -lSBF";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = component; }; name = Release; };
@@ -408,7 +408,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				OTHER_LDFLAGS = "-lSBF";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO; }; name = Debug; };
 		C25B9CF10599287A66EB4ACC = {isa = XCBuildConfiguration; buildSettings = {
@@ -441,7 +441,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				OTHER_LDFLAGS = "-lSBF";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO; }; name = Release; };
 		74A3EA5042180FB33202C279 = {isa = XCBuildConfiguration; buildSettings = {
@@ -471,7 +471,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO; }; name = Debug; };
 		D48880629DDF0C5C8A2D3913 = {isa = XCBuildConfiguration; buildSettings = {
@@ -503,7 +503,7 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciwhitfill.SBF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisWhitfill.SBF;
 				SDKROOT_ppc = macosx10.5;
 				USE_HEADERMAP = NO; }; name = Release; };
 		390C7806ADC2FFC87913F892 = {isa = XCBuildConfiguration; buildSettings = {
