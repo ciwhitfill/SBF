@@ -29,11 +29,11 @@ SbfAudioProcessor::SbfAudioProcessor()
                                                  "Filter Frequency", // parameter name
                                                  10.0f,   // mininum value
                                                  360.0f,   // maximum value
-                                                 45.0f)); // default value
+                                                 80.0f)); // default value
     
     addParameter(slope = new AudioParameterBool ("bool",
                                                  "Filter Slope",
-                                                 true));
+                                                 false));
 }
 
 SbfAudioProcessor::~SbfAudioProcessor()
@@ -105,8 +105,10 @@ void SbfAudioProcessor::changeProgramName (int index, const String& newName)
 //==============================================================================
 void SbfAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
+    currentSampleRate = sampleRate;
+    filter.reserve(2);
+    filter[0].init();
+    filter[1].init();
 }
 
 void SbfAudioProcessor::releaseResources()
@@ -156,11 +158,25 @@ void SbfAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& mid
 
     // This is the place where you'd normally do the guts of your plugin's
     // audio processing...
-    for (int channel = 0; channel < totalNumInputChannels; ++channel)
+    for (int sample = 0; sample < buffer.getNumSamples(); sample ++)
     {
-        float* channelData = buffer.getWritePointer (channel);
-
-        // ..do something to the data...
+        if (*freq != prevFreq)
+        {
+            filter[0].setParams(*freq, currentSampleRate);
+            filter[1].setParams(*freq, currentSampleRate);
+            prevFreq = *freq;
+        }
+        
+        
+        mid = 0.5*(buffer.getSample(0, sample)+buffer.getSample(1, sample));
+        side = filter[0].linearHighPass(0.5*(buffer.getSample(0, sample)-buffer.getSample(1, sample)));
+        if (*slope == true)
+        {
+            side = filter[1].linearHighPass(side);
+        }
+        buffer.setSample(0, sample, mid+side);
+        buffer.setSample(1, sample, mid-side);
+        
     }
 }
 
@@ -178,16 +194,23 @@ AudioProcessorEditor* SbfAudioProcessor::createEditor()
 //==============================================================================
 void SbfAudioProcessor::getStateInformation (MemoryBlock& destData)
 {
-    // You should use this method to store your parameters in the memory block.
-    // You could do that either as raw data, or use the XML or ValueTree classes
-    // as intermediaries to make it easy to save and load complex data.
+    ScopedPointer<XmlElement> xml (new XmlElement ("SBF"));
+    xml->setAttribute("freq", (double) *freq);
+    xml->setAttribute("slope", (bool) *slope);
 }
 
 void SbfAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
 {
-    // You should use this method to restore your parameters from this memory block,
-    // whose contents will have been created by the getStateInformation() call.
-}
+    ScopedPointer<XmlElement> xmlState (getXmlFromBinary (data, sizeInBytes));
+    
+    if (xmlState != nullptr)
+    {
+        if (xmlState->hasTagName ("SBF"))
+        {
+            *freq = (float) xmlState->getDoubleAttribute ("freq", 60.0);
+            *slope = xmlState->getBoolAttribute ("slope", false);
+        }
+    }}
 
 //==============================================================================
 // This creates new instances of the plugin..

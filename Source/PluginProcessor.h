@@ -11,7 +11,7 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
-
+#include "Filters.h"
 
 //==============================================================================
 /**
@@ -60,6 +60,10 @@ public:
     AudioParameterBool* slope;
 
 private:
+    FilterBank filter;
+    float currentSampleRate;
+    double mid, side;
+    float prevFreq;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SbfAudioProcessor)
 };
