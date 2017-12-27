@@ -20,6 +20,7 @@
 */
 class SbfAudioProcessorEditor  : public AudioProcessorEditor,
                                  public Slider::Listener,
+                                 public Button::Listener,
                                  private Timer
 {
 public:
@@ -53,11 +54,26 @@ public:
             processor.freq->endChangeGesture();
         }
     }
+    
+    
+    void buttonClicked (Button* button) override
+    {
+        if (button == &shallowSlopeButton)
+            *processor.slope = false;
+        if (button == &steepSlopeButton)
+            *processor.slope = true;
+    }
+    
     private:
     void timerCallback() override
     {
         filterFreq.setValue(*processor.freq);
         freqLabel.setText(String(*processor.freq, 0), dontSendNotification);
+        
+        if (*processor.slope)
+            steepSlopeButton.setToggleState (true, dontSendNotification);
+        else
+            shallowSlopeButton.setToggleState (true, dontSendNotification);
     }
     
 
@@ -69,6 +85,8 @@ public:
     Label titleLabel;
     Slider filterFreq;
     Label freqLabel;
+    TextButton shallowSlopeButton;
+    TextButton steepSlopeButton;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SbfAudioProcessorEditor)
 };

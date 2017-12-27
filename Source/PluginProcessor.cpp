@@ -33,13 +33,7 @@ SbfAudioProcessor::SbfAudioProcessor()
     
     addParameter(slope = new AudioParameterBool ("bool",
                                                  "Filter Slope",
-                                                 false));
-    
-    addParameter(width = new AudioParameterFloat ("width",
-                                                  "Width",
-                                                  -6.0f,
-                                                  6.0f,
-                                                  0.0f));
+                                                 true));
 }
 
 SbfAudioProcessor::~SbfAudioProcessor()
